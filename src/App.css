@@ -1,38 +1,718 @@
-.App {
-  text-align: center;
+body{
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* common css start here */
+.Varal-file{
+    position: relative;
+    overflow: hidden;
+}
+.border-botom{
+   border-bottom:6px solid orange;
+   margin-right: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* common css end here */
+.Varal-file .header-section {
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    padding: 25px 0;
+}
+.header-section .left-side{
+    flex: 1;
+}
+.header-section .right-side{
+    flex: 3;
+}
+.header-section .right-side .hemburg{
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
+    background-color: #ffffff;
+    border: 0;
+    margin-left: 10px;
+    color: gray;
+    font-size: 29px;
+}
+.header-section .right-side ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0;
+    align-items: center;
+}
+.header-section .right-side ul li{
+    margin: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-section .right-side li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    font-weight: 400;
+}
+.header-section .right-side ul button{
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
+    background-color: #4a4af0;
+    border: 0;
+    margin-left: 10px;
+}
+/* first section start here */
+.first-section {
+    margin:30px 0;
+}
+.first-section .left-side{
+    height: 100%;
+    padding-top: 50px;
+    max-width: 74%;
+    margin-right: auto;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.first-section .left-side h5 {
+    margin-top: 20px;
+    color: rgb(79, 79, 246);
+    font-size: 18px;
+    font-weight: 600;
+ 
+}
+.first-section .left-side h3{
+   margin: 20px 0;
+   font-size: 28px;
+   font-weight: 800;
+   color: rgb(68, 68, 68); 
+   line-height: 38px;
+}
+.first-section .left-side p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0000006b;
+}
+.first-section .btn-group button{
+    padding: 14px 20px;
+    border: 1px solid rgb(78, 78, 240);
+    background-color: transparent;
+    color: rgb(78, 78, 240) ;
+}
+.first-section .btn-group button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.first-section .btn-group button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.first-section .btn-group button:hover{
+    background-color:rgb(78, 78, 240);
+    transition: 1s;
+    color: white;
+}
+.first-section .right-side{
+    position: relative;
+}
+.first-section .right-side-image img{
+    width: 100%;
+   }
+.first-section  .input-part{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.first-section .input-part input{
+    padding: 10px 10px 10px 51px;
+    border: 2px solid rgb(83, 83, 243);
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 5px;
+    outline: 0;
+}
+.first-section .input-part input::placeholder{
+    color: rgb(87, 87, 248);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-section .input-part .search-icon{
+    position: absolute;
+    color: rgb(106, 106, 245);
+    font-size: 24px;
+    right:24%;
+    top: 16px;
 }
+.first-section .round-img img:nth-child(3){
+    position: absolute;
+    top: 18px;
+    left: -10%;
+}
+.first-section .round-img img:first-child{
+    position: absolute;
+    top: 65px;
+    right: 57%;
+}
+.first-section .round-img img:nth-child(2){
+    position: absolute;
+    top: 79px;
+    left: -50%;
+    width: 3%;
+}
+.first-section .round-img img:nth-child(4){
+    position: absolute;
+    top: 28px;
+    left: -70%;
+    width: 2%;
+}
+/* first section end here */
+
+/* second section start here */
+.second-section {
+    padding: 20px 0;
+}
+.second-section .container-custum{
+    position: relative;
+    overflow: hidden;
+}
+.second-section .img-group img:first-child{
+    position: absolute;
+    left: -208px;
+    top: 12%;
+}
+.second-section .img-group img:last-child{
+    position: absolute;
+    right: 64%;
+    top: 27%;
+}
+.second-section .text-part{
+    text-align: center;
+}
+.second-section h4{
+    padding: 20px 0 10px ;
+    color: rgb(71, 124, 239);
+    font-size:17px;
+}
+.second-section h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+.second-section .title-and-text{
+    margin: 50px 0;
+}
+.second-section .title-and-text>p{
+    width: 61%;
+    margin: auto;
+    font-size: 21px;
+    font-weight: 700;
+    color: #80808085;
+}
+.second-section .text-part h4 img{
+    border: 2px solid #7777e4;
+    border-radius: 50%;
+    padding: 3px 5px 5px 4px;
+    margin-left: 11px;
+}
+/* second section end here */
+
+/* third section start here */
+.third-section{
+    padding:50px 0;
+}
+.third-section .cards{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.third-section .cards img{
+    padding: 30px 0;
+    width: 10%;
+    flex: 1;
+}
+.third-section .cards h4{
+    font-size: 25px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.third-section .cards p:last-child {
+    margin-top: -2px;
+    font-size: 24px;
+    flex: 1;
+}
+.third-section .cards .paragraph{
+    font-size: 21px;
+    color: gray;
+    flex: 1;
+}
+.third-section .cards p a{
+    text-decoration: none;
+    color: orange;
+}
+
+/* third section end here */
+
+/* fourth section start here */
+.Fourth-section .firstimg{
+    position: absolute;
+    top: -73px;
+    left: 20%;
+    width: 17px;
+}
+.Fourth-section .secondimg{
+    position: absolute;
+    right: 44%;
+    top: -65px;
+}
+.Fourth-section .thirdimg{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 15px;
+}
+.Fourth-section .fifthimg{
+    left: 80%;
+    position: absolute;
+    top: 43%;
+    width: 20px;
+}
+
+.Fourth-section .fourthimg{
+    position: absolute;
+    left: 25%;
+    top: 58%;
+    width: 29px;
+}
+.Fourth-section .siximg{
+    position: absolute;
+    left: 49%;
+    bottom: 17%;
+}
+.Fourth-section {
+    margin:50px 0;
+    position: relative;
+}
+.Fourth-section h5 {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Fourth-section .single-card h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Fourth-section .single-card>p{
+    font-size:18px;
+    color: gray;
+}
+.Fourth-section h5 a {
+   text-decoration: none;
+   color: rgb(79, 79, 246);
+   word-spacing: 5px;
+}
+.Fourth-section  p a{
+    text-decoration: none;
+    color:rgb(89, 81, 234);
+}
+.Fourth-section  p a img{
+    width: 15px;
+    margin-left: 10px !important;
+}
+.Fourth-section .single-card{
+    border: 2px solid#0000001a;
+    padding: 31px 58px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 15px;
+}
+.Fourth-section .single-card img{
+    margin: auto;
+}
+
+.Fourth-section .top-paragrap p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #3f3a3a;
+}
+.Fourth-section .left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 89%;
+    margin: auto;
+}
+/* fourth section end here */
+.Fifth-section{
+    position: relative;
+}
+.Fifth-section .subtitle {
+    width:65%;
+    text-align: center;
+    margin: auto;
+    padding:80px 0;
+}
+.Fifth-section .subtitle h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height:46px;
+    text-align: center;
+}
+.Fifth-section .Owlcrosal1 {
+    margin: 53px 0 60px 0;
+}
+.Fifth-section .sevenimg{
+    position: absolute;
+    left: 11%;
+    width: 8%;
+    top: 2%;
+    opacity: .4;
+}
+.Fifth-section .eightimg{
+    position: absolute;
+    left: 11%;
+    width: 8%;
+    top: 2%;
+    opacity: .4;
+}
+.Fifth-section .nineimg{
+    position: absolute;
+    left: 82%;
+    width: 45px;
+    top: 5%;
+    opacity: .4;
+}
+.Fifth-section .fifteenimg{
+    position: absolute;
+    left: 91%;
+    width: 47px;
+    top: 21%;
+    opacity: .4;
+}
+/* six-section  css start here */
+.six-section{
+    position: relative;
+}
+.six-section .tenimg{
+    position: absolute;
+    left: 15%;
+    width: 50px;
+    opacity: .5;
+}
+.six-section .elevenimg{
+    position: absolute;
+    left: 56%;
+    width: 36px;
+    opacity: .5;
+    bottom: 9%;
+}
+.six-section .twelveimg{
+    position: absolute;
+    left: 55%;
+    width: 21px;
+    opacity: .5;
+    bottom: 58%;
+}
+.six-section .thirteenimg{
+    position: absolute;
+    left: 40%;
+    width: 21px;
+    opacity: .5;
+    top: 26%;
+}
+.six-section .fourteenimg{
+    position: absolute;
+    left: 36%;
+    width: 21px;
+    opacity: .5;
+    bottom: 30%;
+}
+.six-section .firstpic{
+    position: absolute;
+    right: -215px;
+    top: -206px;
+    z-index: 1;
+}
+.six-section .border-icon{
+    padding: 15px 15px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-right: 22px;
+}
+.six-section .card:hover .border-icon{
+    border: 1px solid rgb(255, 255, 255);
+}
+.six-section .left-side,.right-side{
+  width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.six-section .TEXT-QUOTE{
+    position: absolute;
+    top: -47px;
+    font-size: 60px;
+    opacity: .2;
+    line-height: 130px;
+    left: -27px;
+}
+
+.six-section .TEXT-QUOTE1{
+    font-size: 58px;
+    position: absolute;
+    left:172px;
+    color: #8080808f;
+    bottom: -9px;
+}
+.six-section .text-part ,h4{
+    position: relative;
+    font-weight: 600;
+    margin:30px 0 25px;
+    font-size: 20px;
+    color: #000000;
+}
+.six-section .text-part h4::before{
+    content: "";
+    background-color: #5757d5e0;
+    width: 4px;
+    position: absolute;
+    left: -15px;
+    height: 52px;
+    top: -3px;
+}
+.six-section .card {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+}
+.six-section .card:hover  {
+   background-color:rgb(78, 78, 237);
+   color: white;
+   border: 1px solid white;
+   transition: .5s;
+}
+.six-section .card:hover  .image{
+    background-image: url("./Assets/networkwhite.svg");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position:center;
+
+}
+.six-section .card:hover span{
+    color: white;
+}
+.six-section .card .image{
+    background-image: url("./Assets/networkblue.svg");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position:center;
+}
+.six-section .review p{
+    margin: 0;
+}
+.six-section .card span{
+    color: rgb(87, 87, 220);
+}
+.six-section .card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.six-section .user-text-part {
+    margin-left:100px;
+    margin-bottom: 20px;
+    width: 60%;
+    position: relative;
+
+}
+.six-section .user-text-part p {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.six-section .right-side .footer-part ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+.six-section  .footer-part a{
+    text-decoration: none;
+    color: gray;
+}
+.six-section .footer-part >div{
+    margin-bottom: 30px;
+    position: relative;
+}
+.six-section .right-side ul li {
+    font-size: 18px;
+    color: gray;
+    line-height: 25px;
+}
+.six-section .li-custum{
+    width: 60%;
+}
+.six-section .li-custum2{
+margin-top: 23px;
+}
+.six-section .right-side .footer-part  h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.six-section .user-text-part p::before{
+    content: "";
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQcSURBVHgBxZldbttGEMf/s6TbvARV0aRAn8qeIM4JKp8grP1SFHasnCDJCWyfoPYJ5CBG0SdbPkF9gyonMPMUIF/mcyLtZIaiZIuhSO6Kcn6ArZX49cfs7HwsCUsS//kmwtpa1zBHIPPr3EG2ry1oKIN0cHL/AktC8CDeftc1ZB6BKIaKbEYqj7sA7Pnpy3vH8MBJrIokCvYI3MVyJGLtA1fRjcTqVNPa9/0WRBZJXETXit16fPWU2e7LsIPVcWgDczA4/jGtOqlS7Obu1d+w9hluh8R+/rQx+PeXZNEJC8WK0L4I7eF2qRRcKvaWLVokEZd4WOYSYfGHzcdXe55CU1gegPi1fmFQh4geyTCCGxGN+Uw+N4oH5iyrq96sfXcJV5Fsj2wYHpZZI4/JfbiLfn768qdDLBK7ufPh0vGmOmUbIjKpOinuXXXMmEUwx2hOKv778Kb/mtkNd973HIWiiVBFLW4DesKkqbcxHY3tN38w1wPagxvHTYROUcFsx8/hgCYhdaPp90zs1vZ7nZ4IDmgQhyNazHBWHzSHQDPXmViWzC4cYMbQxarzF9tXLqdLRNlVn9dxJpbdHF+vSOEJE1z8VulgNFrXgbnpE7eBsexcY0xdwRjGuuO1OjURfDHmAZyh37NLJZw4ixWiJWakC0eIJovffNWKNMQ4LkrFJ5bndLLEAn968STkNSJL5e6xfIb5hB+MBN4InhiifhPBec3xH/ysev08CdIJ/OmI4DOpKfpZl1sgji87WsWJ0P+xpFCFtnY+nrnH2XI09xNnfVWqC5eYfRZvKVKBUWilt5dQhDbIxa3nY7SFZkz9NB4Z5RswyZghguACYwtPEmZOdCCz060+RzsHeLmFzNK5foZakMgCUeVN02BpZ5AVG5rDp9mN5bzR52Gx+dNYGzA9ZQfhlvkiE63/Nrff7UtyqI2BYqEjDoP9uv6+CWIg7fP0mXVGSmRx/aaDLCmIlQaog+3B2cm9Z20IVbS/suOxNoU19+NZ3ZyJFQHDqqJYLXp6cn8fLTP45+ehRKM/Kk6RHk/WVI65FjReVPmnalGsiKx7YH5RepDti5tFvilcdFRySZaFsCKyTT+alIAFkuJszhUyuniQ7ewVkI25VQiO/3q7vigVS4/3lXtQ6Q2CQIuOslV6LL38QdXmWVPy3cnD0oOymMvWSGme1Vgo5Vwf5SQ+G8Gze9dtSC8QqiwsCmoEK4n8HYmlB3WW1uoLd+/GBLNbuSFdIbRSbPaQiUvoJlmEahLoiw4ez7fZ0oU0rr5qhNaKVSSN6q7eKrbopyQSa580eZvTuDbM3UIjQoR2qNx9LMO5kG1BtLPIKd5Vt/ozGdOT4QOatPNVBYmWiefSkQwQhkPf+qKdFgH5m8YwjOZ+HI0S3LmTtlX8fAFEBfZFUIHnbgAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    left: -88px;
+    top: 10px;
+}
+.six-section .user-text-part .circle{
+    position: absolute;
+    border: 2px solid blue;
+    padding: 29px;
+    border-radius: 50%;
+    left: -98px;
+    top: 0px;
+
+}
+.six-section .user-text-part p::after{
+    content: "";
+    background-color: #5a5eff;
+    background-repeat: no-repeat;
+    height: 3px;
+    width: 57px;
+    position: absolute;
+    left: -93px;
+    bottom: 9px;
+}
+.six-section .bottom-input input{
+    padding: 10px 20px;
+    width: 100%;
+    border: 0;
+    background-color: #dcd5d53d;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: 0;
+}
+.six-section .bottom-input  img{
+    width:43px;
+    position: absolute;
+    right: -1px;
+}
+.six-section .social-media {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.six-section .social-media div{
+    margin: 0 10px;
+}
+.six-section .copyright-part {
+    text-align: center;
+    padding: 46px 0;
+}
+.owl-nav{
+    display: none;
+}
+/* six-section  css end here */
+
+/* .responsive css  start here */
+@media screen  and (max-width: 426px){
+   .header-section ul li, .button-1 {
+    display: none;
+   } 
+   .first-section .input-part input {
+    width: 100%;
+}
+.first-section .input-part .search-icon {
+    right: 89%;
+    top: 16px;
+}
+.second-section h4 {
+    width: 69%;
+    margin: auto;
+}
+.second-section .title-and-text>p {
+    width:100%;
+    margin: auto;
+    font-size: 18px;
+}
+.third-section .cards {
+    align-items: center;
+}
+.Fourth-section .top-paragrap p {
+    text-align:start;
+}
+
+.Fourth-section h5 {
+    text-align:start;
+}
+.Fourth-section .single-card {
+    padding: 31px 24px 20px;
+    border-radius: 13px;
+}
+.Fourth-section .single-card img{
+    width: 100%;
+}
+.Fourth-section .single-card  a img{
+    width:15%;
+}
+.Fourth-section .container .row{
+    row-gap: 30px;
+}
+.Fifth-section .subtitle{
+    display: none;
+}
+.first-section .left-side{
+    max-width: 100%;
+}
+ .first-section .left-side h3{
+    font-size: 26px;
+}
+
+
+.first-section .left-side {
+    padding-top: 8px;
+}
+.btn-group {
+    border-radius: 0.375rem;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+.second-section .text-part h4 img{
+    margin-top: 10px;
+}
+.third-section {
+    padding: 1px 0;
+}
+.second-section .title-and-text {
+    margin: 30px 0;
+}
+.third-section .cards img {
+    padding: 10px 0;
+}
+.Fourth-section .left-side {
+    gap: 31px
+}
+}
+@media screen  and (min-width: 426px){
+    .header-section .hemburg{
+     display: none;
+    } 
+  
+ }
